@@ -26,7 +26,16 @@ public class Stack {
 			stackArray[top] = ch;
 		}
 		else {
-			System.out.println();
+			System.out.println("Stack is full");
 		}
+	}
+	
+	public char pop() {
+		if (!isEmpty()) {
+			return stackArray[top--];
+		}else {
+			System.out.println("Stack is empty");
+		}
+		return 0;
 	}
 }
